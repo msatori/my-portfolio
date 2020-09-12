@@ -1,0 +1,62 @@
+
+body {
+    color: skyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Start Header Styles*/
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-image: url("../images/header-backg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #7fffd4;
+    font-style: italic;
+}
+
+header a {
+    color: honeydew;
+    text-decoration: none;
+    text-shadow: rgba(0,0,0, 1);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-shadow: 0 0 5px rgba(0,0,0, 1);
+}
+
+header nav ul li a:hover {
+    background: #7fffd4;
+    color: honeydew;
+}
+
+/*End Header Styles*/
+
+/*Start Footer Styles/
