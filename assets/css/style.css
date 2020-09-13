@@ -7,6 +7,7 @@ body {
 /* Start Header Styles*/
 header {
     padding: 20px 20px;
+    margin: 0 0 2px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,6 +18,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     position: -webkit-sticky;
+    position: sticky;
 }
 
 header h1 {
@@ -56,7 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #7fffd4;
+    background: rgba(0, 139,139, .75);
     color: honeydew;
     text-shadow: none;
 }
@@ -68,14 +70,21 @@ header nav ul li a:hover {
 .hero {
     background-image: url(../images/palm-bg.jpg);
     background-size: cover;
-    height: 200px;
+    height: 50vh;
     background-position: center;
+    background-repeat: no-repeat;
+}
+.hero p {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    color: honeydew;
+    font-size: 40px;
+    text-shadow: 3px #7fffd4;
+    padding: 200px;
+    margin: 5px 0 0 0;
 }
-
+/*End hero Styles*/
 
 .section-title {
     font-style: italic;
@@ -88,14 +97,15 @@ header nav ul li a:hover {
     width: 30%;
 }
 
-.hero p {
+.work-title {
+    font-style: italic;
+    color: #008B8B;
+    font-size: 30px;
+    align-items: center;
+    text-decoration: underline #7fffd4;
     display: flex;
-    justify-content: center;
-    color: honeydew;
-    font-size: 40px;
-    text-shadow: 3px #7fffd4;
-    background: 10px rgba();
-
+    float: center;
+    width: 30%;
 }
 
 .about { 
@@ -115,13 +125,55 @@ header nav ul li a:hover {
     color: honeydew;
 
 }
+/*My Work Grid*/
+.grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin: 0 0 10px 0;
+}
+.grid-container {
+    background-color: rgba(85, 201, 201, 0.75);
+    width: 80%;
+    display: grid;
+    grid-template-columns: 3fr repeat(2, 1fr);
+    grid-template-rows: 2fr repeat(3, 1fr);
+    border: 2px solid #008B8B;
+    grid-row-gap: 2px;
+    grid-column-gap: 4px;
+}
+.grid-item {
+    display: flex;
+    border: 2px solid #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid-item.rb {
+    text-align: center;
+    padding: 40px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 
+.grid-item.flowers {
+    display: flex;
+    overflow: auto;
+   
+
+.grid-item.santiago {
+    display: flex;
+    overflow: auto;
+   
+}
 /*Contact Me*/
     .contact {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 139,139, .75);
     padding: 10px;
+    width: 100%;
     }
 
     .contact-info {
