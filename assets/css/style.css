@@ -1,26 +1,29 @@
 
 body {
-    color: skyblue;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F0F8FF ;
 }
 /* Start Header Styles*/
 header {
-    padding: 20px 35px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-image: url("../images/header-backg.jpg");
+    background-image: url(../images/palm-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    position: -webkit-sticky;
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 40px;
     color: #7fffd4;
     font-style: italic;
+    text-shadow: rgba(0,0,0, 1);
 }
 
 header a {
@@ -48,15 +51,79 @@ header nav ul {
 header nav ul li a {
     padding: 10px 10px;
     font-weight: lighter;
-    font-size: 2vw;
+    font-size: 20px;
     text-shadow: 0 0 5px rgba(0,0,0, 1);
 }
 
 header nav ul li a:hover {
     background: #7fffd4;
     color: honeydew;
+    text-shadow: none;
 }
 
 /*End Header Styles*/
 
+/*Hero Styles*/
+
+.hero {
+    background-image: url(../images/blue.jpg);
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.section-title {
+    font-style: italic;
+    color: honeydew;
+    font-size: 30px;
+    align-items: center;
+    text-decoration: underline #7fffd4;
+    display: flex;
+    float: left;
+    width: 30%;
+}
+
+.hero p {
+    display: flex;
+    justify-content: center;
+    color: honeydew;
+    font-size: 40px;
+    text-shadow: 3px #7fffd4;
+
+}
+
+.about { 
+    display: flex;
+    justify-content: center;
+    background-color: rgba(85, 201, 201, 0.75);
+    width: 100%;
+    padding: 10px;
+}
+
+.about-me p {
+    line-height: 1.5;
+    width: 90%;
+    margin:0 auto;
+    padding: 0;
+    text-align: center;
+    color: honeydew;
+
+}
+
+/*Contact Me*/
+    .contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 139,139, .75);
+    padding: 10px;
+    }
+
+    .contact-info {
+        
+    }
 /*Start Footer Styles/
