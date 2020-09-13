@@ -97,6 +97,13 @@ header nav ul li a:hover {
     width: 30%;
 }
 
+.me {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
 .work-title {
     font-style: italic;
     color: #008B8B;
@@ -108,14 +115,14 @@ header nav ul li a:hover {
 }
 
 .about { 
-    display: flex;
-    justify-content: center;
     background-color: rgba(85, 201, 201, 0.75);
     width: 100%;
     padding: 10px;
 }
 
 .about-me p {
+    display: flex;
+    justify-content: space-around;
     line-height: 1.5;
     width: 90%;
     margin:0 auto;
@@ -182,14 +189,14 @@ header nav ul li a:hover {
  }
 
  .img-link:hover {
-     flex-wrap: wrap;
-    border: 5px solid rgba(0,0,0, .5);
+    flex-wrap: wrap;
+    border: 7px solid rgba(0,0,0, .5);
  }
   
 /*Contact Me*/
     .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgba(0, 139,139, .75);
     padding: 10px;
     width: 100%;
@@ -201,5 +208,8 @@ header nav ul li a:hover {
 /*Start Footer Styles*/
 
 .footer {
-    
+    background-color: rgba(85, 201, 201, 0.75;
 }
+
+/*MEDIA QUERIES*/
+
