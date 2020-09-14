@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -196,10 +200,81 @@ header nav ul li a:hover {
     }
 
     .contact-info {
-        
+        display: inline;
+        justify-content: space-evenly;
     }
 /*Start Footer Styles*/
 
-.footer {
+footer {
+    font-size: 20px;
+    color: #008B8B;
+    text-align: bottom;
+    width: 100%;
     
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+    
+        .grid-container {
+            display: inline-grid;
+            width: 100%;
+      }
+       .work-title {
+           width: 100%;
+           text-align: center;
+           margin-left: 200px
+       }
+
+       .contact {
+        width: 100vh;
+    }
+/*MEDIA QUERY FOR PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+    header {
+        display:flex;
+        justify-content: center;
+        width: 100vh;
+     }
+ 
+     header h1 {
+         justify-content: center;
+     }
+     
+     .hero {
+         position: relative;
+         display: flex;
+         justify-content: center;
+         width: 100vh;
+     }
+     .about {
+        width: 100vh;
+    }
