@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif:wght@700&display=swap");
+html, body {
+  overflow: hidden;
+}
+
 header {
   background-color: #a41e36;
   top: 0;
@@ -32,10 +36,10 @@ header {
 }
 .background:first-child {
   background-image: url(../images/landing-bg.png);
-  transform: translateY(-7.5vh);
+  transform: translateY(-15vh);
 }
 .background:first-child .content-wrapper {
-  transform: translateY(7.5vh);
+  transform: translateY(15vh);
 }
 .background:nth-child(2) {
   background-image: url(../images/projects.png);
