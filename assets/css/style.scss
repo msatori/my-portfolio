@@ -11,9 +11,11 @@ $title-font: 'Noto Serif', serif;
 $secondary-font: 'Montserrat', sans-serif;
 
 
-html, body {
-    overflow: hidden;
-}
+// html  { 
+//   body {
+    
+// }
+// }
 header {
     background-color: #a41e36;
     top: 0;
@@ -44,15 +46,18 @@ header {
     }
     &:first-child {
         background-image: url(../images/landing-bg.png);
-        transform: translateY(-$parallax-offset / 2);
+        transform: translateY(-$parallax-offset / 4);
         .content-wrapper {
-          transform: translateY($parallax-offset /2);
+          transform: translateY($parallax-offset /4);
         }
       }
       &:nth-child(2) {
-        background-image: url(../images/about-slide.png);
+        background-image: url(../images/projects.png);
       }
       &:nth-child(3) {
+        background-image: url(../images/about-slide.png);
+      }
+      &:nth-child(4) {
         background-image: url(../images/contact-slide.png);
       }
     }
@@ -114,6 +119,46 @@ header {
        display: flex;
 
     }
+}
+
+.projects {
+  .card {
+    position: relative;
+    max-width: 26.5em;
+    margin: 2em;
+    padding: 2em;
+    background-color: #fff;
+
+    &-title {
+      margin: 0 auto 1em;
+      color: #333;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    &-img {
+      display: block;
+      width: 20em;
+      max-width: 100%;
+      margin: 1em auto;
+      border-radius: 2px;
+    }
+
+    &-text {
+      margin: 2em 5%;
+    color: #646464;
+    }
+
+    &-btn {
+      display: table;
+      padding: .7em 4em;
+      background: #ddba76;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 1em auto 0;
+    }
+  }
 }
 
 .contact  {
