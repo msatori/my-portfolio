@@ -1,10 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif:wght@700&display=swap");
 html, body {
   overflow: hidden;
 }
 
 header {
-  height: 100px;
+  background-color: #a41e36;
+  top: 0;
+  font-size: calc(5pts + 1.5vh);
+  z-index: 9999;
 }
 
 .background {
@@ -39,43 +42,84 @@ header {
   transform: translateY(15vh);
 }
 .background:nth-child(2) {
-  background-image: url(../images/landing-bg.png);
+  background-image: url(../images/about-slide.png);
 }
 .background:nth-child(3) {
-  background-image: url(../images/landing-bg.png);
+  background-image: url(../images/contact-slide.png);
 }
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  z-index: 3;
+  z-index: 4;
 }
 
 .background:nth-child(2) {
-  z-index: 2;
+  z-index: 3;
 }
 
 .background:nth-child(3) {
+  z-index: 2;
+}
+
+.background:nth-child(4) {
   z-index: 1;
 }
 
 .content-wrapper {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  text-align: center;
   flex-flow: column nowrap;
-  color: #fff;
-  font-family: Montserrat;
-  text-transform: uppercase;
+  color: #0e0d0d;
   transform: translateY(40vh);
   will-change: transform;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
-.content-title {
-  font-size: 12vh;
-  line-height: 1.4;
+
+.hero-title {
+  font-family: "Noto Serif", serif;
+  font-size: calc(50pt + .5vh);
+  padding-left: 15%;
+  color: black;
+  border: 3px solid #fff;
+  width: 20%;
+}
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(20pt + .5vh);
+  color: #fff;
+  padding-left: 15%;
+}
+
+.about-title {
+  font-family: "Noto Serif", serif;
+  font-size: calc(20pt + .5vh);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.about-subtitle {
+  font-family: "Noto Serif", serif;
+  font-size: calc(15pt + .5vh);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.contact-title {
+  font-family: "Noto Serif", serif;
+  font-size: calc(20pt + .5vh);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.contact-item {
+  font-family: "Noto Serif", serif;
+  font-size: calc(15pt + .5vh);
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .background.up-scroll {

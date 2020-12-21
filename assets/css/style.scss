@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif:wght@700&display=swap');
 @mixin transition($time, $property: all, $easing: ease-in) {
     transition: $property $time $easing;
 }
@@ -7,13 +6,19 @@
 $parallax-offset: 30vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
-$slide-number: 3;
+$slide-number: 4;
+$title-font: 'Noto Serif', serif;
+$secondary-font: 'Montserrat', sans-serif;
+
 
 html, body {
     overflow: hidden;
 }
 header {
-    height: 100px;
+    background-color: #a41e36;
+    top: 0;
+    font-size: calc(5pts + 1.5vh);
+    z-index: 9999;
 }
 .background {
     background-size: cover;
@@ -45,10 +50,10 @@ header {
         }
       }
       &:nth-child(2) {
-        background-image: url(../images/landing-bg.png);;
+        background-image: url(../images/about-slide.png);
       }
       &:nth-child(3) {
-        background-image: url(../images/landing-bg.png);;
+        background-image: url(../images/contact-slide.png);
       }
     }
   
@@ -63,21 +68,71 @@ header {
   &-wrapper {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  text-align: center;
   flex-flow: column nowrap;
-  color: #fff;
-  font-family: Montserrat;
-  text-transform: uppercase;
+  color: rgb(14, 13, 13);
   transform: translateY($content-offset);
   will-change: transform;
   backface-visibility: hidden;
   @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
   }
-  &-title {
-    font-size: 12vh;
-    line-height: 1.4;
-  }
+  
+}
+
+.hero {
+    
+    &-title{
+       font-family: $title-font;
+       font-size: calc(50pt + .5vh); 
+       padding-left: 15%;
+       color: black;
+       border: 3px solid #fff;
+       width: 20%;
+    }
+
+    &-subtitle {
+        font-family: $secondary-font;
+        font-size: calc(20pt + .5vh); 
+        color: #fff;
+        padding-left: 15%;
+    }
+}
+
+.about  {
+    &-title {
+       font-family: $title-font;
+       font-size: calc(20pt + .5vh); 
+       justify-content: center;
+       text-align: center;
+       display: flex;
+    }
+
+    &-subtitle {
+        font-family: $title-font;
+       font-size: calc(15pt + .5vh); 
+       justify-content: center;
+       text-align: center;
+       display: flex;
+
+    }
+}
+
+.contact  {
+    &-title {
+       font-family: $title-font;
+       font-size: calc(20pt + .5vh); 
+       justify-content: center;
+       text-align: center;
+       display: flex;
+    }
+
+    &-item {
+        font-family: $title-font;
+       font-size: calc(15pt + .5vh); 
+       justify-content: center;
+       text-align: center;
+       display: flex;
+
+    }
 }
 
 // ------------- SET TRANSFORM VALUES ------------- //
