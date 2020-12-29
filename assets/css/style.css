@@ -4,7 +4,7 @@ html, body {
 }
 
 header {
-  background-color: #a41e36;
+  font-family: "Noto Serif", serif;
   top: 0;
   font-size: calc(5pts + 1.5vh);
   z-index: 9999;
@@ -15,5 +15,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Noto Serif", serif;
 }
